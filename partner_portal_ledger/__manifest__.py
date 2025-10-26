@@ -1,16 +1,15 @@
 {
-    "name": "Custom Accounts",
+    "name": "Partner Ledger Report",
     "description": "reports",
     "summary": "Data seen",
     "author": "Ahad AmazeWorks Technologies",
-    "version": "18.0.0.1",
+    "version": "1.0",
     "depends": [ "account",'web'],
     "data": [
-        # 'controllers/partner_ledger.xml',
-        # 'controllers/sale.xml',
-        # 'reports/sale_order.xml',
-        # 'reports/purchase_order.xml',
-        # 'reports/account_move.xml',
+        'security/ir.model.access.csv',
+        'views/ledger.xml',
+        'views/portal_ledger_template.xml'
+
     ],
     'external_dependencies': {
         'python': [

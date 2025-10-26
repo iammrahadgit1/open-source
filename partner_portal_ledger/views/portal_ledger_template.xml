@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="portal_my_home_ledger" name="Portal: Ledger" inherit_id="portal.portal_my_home" priority="30">
+        <xpath expr="//div[@id='portal_common_category']" position="inside">
+            <t t-call="portal.portal_docs_entry">
+                <t t-set="title">Your Ledger</t>
+                <t t-set="icon" t-value="'/partner_portal_ledger/static/description/icon.svg'"/>
+                <t t-set="url" t-value="'/my/ledger'"/>
+                <t t-set="text">View your account ledger details</t>
+                <t t-set="placeholder_count" t-value="'ledger_count'"/>
+                <t t-set="config_card" t-value="True"/>
+            </t>
+        </xpath>
+    </template>
+</odoo>

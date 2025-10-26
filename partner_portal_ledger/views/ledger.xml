@@ -1,0 +1,31 @@
+<odoo>
+    <record id="view_tt_partner_ledger_wizard_form" model="ir.ui.view">
+        <field name="name">tt.partner.ledger.wizard.form</field>
+        <field name="model">tt.partner.ledger.wizard</field>
+        <field name="arch" type="xml">
+            <form string="TT Partner Ledger">
+                <iframe src="/my/ledger" width="100%" height="500" style="border: none; "></iframe>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_tt_partner_ledger_wizard" model="ir.actions.act_window">
+        <field name="name">TT Partner Ledger</field>
+        <field name="res_model">tt.partner.ledger.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">current</field>
+    </record>
+
+        <menuitem id="menu_tt_partner_ledger_root"
+              name="TT Partner Ledger"
+              parent="account.menu_finance_reports"
+              sequence="100"/>
+
+    <menuitem id="menu_tt_partner_ledger"
+              name="Partner Ledger"
+              parent="menu_tt_partner_ledger_root"
+              action="action_tt_partner_ledger_wizard"
+              sequence="10"/>
+
+
+</odoo>
