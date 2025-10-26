@@ -2,7 +2,7 @@
     "name": "Partner Ledger Report",
     "description": "reports",
     "summary": "Data seen",
-    "author": "Ahad AmazeWorks Technologies",
+    "author": "Ahad Rasool",
     "version": "1.0",
     "depends": [ "account",'web'],
     "data": [
